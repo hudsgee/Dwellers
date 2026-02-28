@@ -290,5 +290,3 @@ autoplay = "movey platfoem"
 stream = ExtResource("6_p57ef")
 volume_db = 10.874
 autoplay = true
-
-[node name="Node" type="Node" parent="."]
