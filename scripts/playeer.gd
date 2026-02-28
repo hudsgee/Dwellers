@@ -8,6 +8,7 @@ var score: int = 0
 
 func add_score(amount: int):
 	score += amount
+	$ScoreLabel.text = "Score: %d" % score  # Updates the floating score
 	print(score)
 	
 func _physics_process(delta: float) -> void:
@@ -17,6 +18,10 @@ func _physics_process(delta: float) -> void:
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
+		var p = AudioStreamPlayer.new()
+		p.stream = preload("res://assets/brackeys_platformer_assets/sounds/jump.wav")
+		get_tree().current_scene.add_child(p)  # or add_child(self) if you like
+		p.play()
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
