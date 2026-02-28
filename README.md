@@ -1,4 +1,3 @@
 # Dwellers
 
-the godot game for (campfire.hackclub.com)[Hack Club Campfire]
-
+the godot game for [Hack Club Campfire](campfire.hackclub.com)
