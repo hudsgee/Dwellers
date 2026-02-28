@@ -1,7 +1,6 @@
 extends Area2D
 
-
 func _on_body_entered(body: Node2D) -> void:
-	get_node("COINSFX").play()
-	print("+1coin")
-	queue_free()
+	if body.has_method("add_score"):
+		body.add_score(1)
+		queue_free()
