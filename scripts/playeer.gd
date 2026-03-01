@@ -8,7 +8,11 @@ var score: int = 0
 
 func add_score(amount: int):
 	score += amount
-	$ScoreLabel.text = "Score: %d" % score  # Updates the floating score
+	if score >= 10:
+		$ScoreLabel.text = "YOU WIN 
+		Score: %d" % score
+	else:
+		$ScoreLabel.text = "Score: %d" % score  # Updates the floating score
 	print(score)
 	
 func _physics_process(delta: float) -> void:

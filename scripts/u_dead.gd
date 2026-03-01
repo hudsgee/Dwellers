@@ -4,11 +4,11 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	print("you died")
-	var p = AudioStreamPlayer.new()
-	p.stream = preload("res://assets/brackeys_platformer_assets/sounds/coin.wav")
-	get_tree().current_scene.add_child(p)  # or add_child(self) if you like
-	p.play()
 	timer.start()
 
 func _on_timer_timeout() -> void:
+	var p = AudioStreamPlayer.new()
+	p.stream = preload("res://assets/brackeys_platformer_assets/sounds/hurt.wav")
+	get_tree().current_scene.add_child(p)
+	p.play()
 	get_tree().reload_current_scene()
