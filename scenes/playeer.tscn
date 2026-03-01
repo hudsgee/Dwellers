@@ -1,7 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://cextql0ovaey4"]
 
 [ext_resource type="Script" uid="uid://c3s3wm4r7pj7h" path="res://scripts/playeer.gd" id="1_70wjy"]
-[ext_resource type="Texture2D" uid="uid://dpj8mv1ngeng3" path="res://Sprite idle-0002.png" id="2_wib1g"]
+[ext_resource type="Texture2D" uid="uid://dpj8mv1ngeng3" path="res://assets/josh/Sprite idle-0002.png" id="2_wib1g"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wib1g"]
 size = Vector2(13, 15)

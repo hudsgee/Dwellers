@@ -10,10 +10,14 @@ config_version=5
 
 [application]
 
-config/name="firdt try 2.0"
+config/name="Dwellers"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.5", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://assets/icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
 [input]
 
