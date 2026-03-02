@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbs187qyf164"]
+
+[ext_resource type="Script" uid="uid://b32tt6a3ryepj" path="res://scenes/titlescreen.gd" id="1_3jj3l"]
+[ext_resource type="FontFile" uid="uid://3q4xqfp4msd3" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="1_6d6rd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3jj3l"]
+font = ExtResource("1_6d6rd")
+font_size = 100
+
+[node name="Title-Menue" type="Node"]
+script = ExtResource("1_3jj3l")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -386.0
+offset_top = -272.0
+offset_right = 3677.0
+offset_bottom = 410.0
+text = "Dwellers"
+label_settings = SubResource("LabelSettings_3jj3l")
+uppercase = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Button" type="Button" parent="."]
+offset_left = -117.0
+offset_top = -38.0
+offset_right = 108.0
+offset_bottom = 40.0
+text = "Start Gane"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
